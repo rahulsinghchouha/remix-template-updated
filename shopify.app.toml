@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "2ebb9762b31794f9bdf6dfaa0236e763"
+name = "conative-testing-app-v001"
+handle = "conative-testing-app-v001"
+application_url = "https://strategies-gulf-local-clinics.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "node-test-conative.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://strategies-gulf-local-clinics.trycloudflare.com/auth/callback",
+  "https://strategies-gulf-local-clinics.trycloudflare.com/auth/shopify/callback",
+  "https://strategies-gulf-local-clinics.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false

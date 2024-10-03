@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ddefa2e5ccd692fd244ddb3e36d1e4b3"
+name = "rahul-remix-app"
+handle = "rahul-remix-app"
+application_url = "https://death-registered-hunt-farms.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "node-test-conative.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://death-registered-hunt-farms.trycloudflare.com/auth/callback",
+  "https://death-registered-hunt-farms.trycloudflare.com/auth/shopify/callback",
+  "https://death-registered-hunt-farms.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
